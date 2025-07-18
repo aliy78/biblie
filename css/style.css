@@ -59,7 +59,7 @@ header nav a {
 
 /* Секция "Герой" (Hero) */
 .hero {
-    background: url('images/hero_background.jpg') no-repeat center center/cover;
+    background: url('../images/hero-background.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 100px 0;
