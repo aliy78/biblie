@@ -1,6 +1,6 @@
 fetch('biblie.json') // Или 'data/biblie.json', если файл в папке data
   .then(response => response.json())
-  .then(data => {
+  .then(data => {console.log(data);
     const bibleContent = document.getElementById('bible-content');
     let html = '';
 
