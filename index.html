@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Свет Слова</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Свет Слова</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
 </head>
-<div class="container" style="margin-top: 40px;">
-  <h2>Чтение Библии</h2>
-  <select id="bookSelect"><option disabled selected>Выберите книгу</option></select>
-  <select id="chapterSelect"><option disabled selected>Выберите главу</option></select>
-  <div id="bibleText"></div>
-</div>
-
-<script src="js/bible.js"></script>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Логотип Свет Слова"></a>
-                <h1>Свет Слова</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="#">Библия</a></li>
-                    <li><a href="#">Изучение</a></li>
-                    <li><a href="#">Сообщество</a></li>
-                    <li><a href="about.html">О нас</a></li>
-                </ul>
-            </nav>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Логотип Свет Слова"></a>
+        <h1>Свет Слова</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Библия</a></li>
+          <li><a href="#">Изучение</a></li>
+          <li><a href="#">Сообщество</a></li>
+          <li><a href="about.html">О нас</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Добро пожаловать на сайт изучения Библии!</h2>
+        <p>Откройте для себя глубину и мудрость Священного Писания.</p>
+        <a href="#" class="button">Начать изучение</a>
+      </div>
+    </section>
+
+    <section class="featured-content">
+      <div class="container">
+        <div class="feature-item">
+          <img src="images/bible-icon.png" alt="Онлайн Библия">
+          <h3>Онлайн Библия</h3>
+          <p>Удобный доступ к текстам Библии на разных языках и в разных переводах.</p>
+          <a href="#" class="button">Читать</a>
         </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h2>Добро пожаловать на сайт изучения Библии!</h2>
-                <p>Откройте для себя глубину и мудрость Священного Писания.</p>
-                <a href="#" class="button">Начать изучение</a>
-            </div>
-        </section>
-
-        <section class="featured-content">
-            <div class="container">
-                <div class="feature-item">
-                    <img src="images/bible-icon.png" alt="Онлайн Библия">
-                    <h3>Онлайн Библия</h3>
-                    <p>Удобный доступ к текстам Библии на разных языках и в разных переводах.</p>
-                    <a href="#" class="button">Читать</a>
-                </div>
-                <div class="feature-item">
-                    <img src="images/study-materials-icon.png" alt="Материалы для изучения">
-                    <h3>Материалы для изучения</h3>
-                    <p>Комментарии, толкования, планы чтения и многое другое.</p>
-                    <a href="#" class="button">Подробнее</a>
-                </div>
-                <div class="feature-item">
-                    <img src="images/community-icon.png" alt="Сообщество">
-                    <h3>Сообщество</h3>
-                    <p>Общайтесь, задавайте вопросы и делитесь своими мыслями с другими.</p>
-                    <a href="#" class="button">Присоединиться</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Свет Слова</p>
+        <div class="feature-item">
+          <img src="images/study-materials-icon.png" alt="Материалы для изучения">
+          <h3>Материалы для изучения</h3>
+          <p>Комментарии, толкования, планы чтения и многое другое.</p>
+          <a href="#" class="button">Подробнее</a>
         </div>
-    </footer>
+        <div class="feature-item">
+          <img src="images/community-icon.png" alt="Сообщество">
+          <h3>Сообщество</h3>
+          <p>Общайтесь, задавайте вопросы и делитесь своими мыслями с другими.</p>
+          <a href="#" class="button">Присоединиться</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bible-reader">
+      <div class="container" style="margin-top: 40px;">
+        <h2>Чтение Библии</h2>
+        <select id="bookSelect"><option disabled selected>Выберите книгу</option></select>
+        <select id="chapterSelect"><option disabled selected>Выберите главу</option></select>
+        <div id="bibleText"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2024 Свет Слова</p>
+    </div>
+  </footer>
+
+  <script src="js/bible.js"></script>
 </body>
 </html>
