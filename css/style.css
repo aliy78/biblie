@@ -1,26 +1,37 @@
 /* Общие стили */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Меняем шрифт */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0; /* Светло-серый фон */
     color: #333;
     line-height: 1.6;
 }
 
 .container {
     width: 80%;
+    max-width: 1200px; /* Ограничиваем максимальную ширину */
     margin: auto;
     overflow: hidden;
+    padding: 20px; /* Добавляем отступы */
+}
+
+a {
+    color: #007bff; /* Синий цвет ссылок */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+a:hover {
+    color: #0056b3; /* Более темный синий при наведении */
 }
 
 /* Шапка сайта */
 header {
-    background-color: #333;
+    background-color: #222; /* Темно-серый фон */
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: 3px solid #e8491d;
+    padding: 20px 0;
+    border-bottom: 2px solid #007bff; /* Синяя полоса внизу шапки */
 }
 
 header .container {
@@ -35,26 +46,38 @@ header .logo {
 }
 
 header .logo img {
-    width: 50px;
+    width: 40px; /* Уменьшаем размер логотипа */
     margin-right: 10px;
+}
+
+header .logo h1 {
+    font-size: 24px; /* Уменьшаем размер заголовка */
+    margin: 0;
 }
 
 header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
 header nav li {
-    display: inline;
-    padding: 0 20px;
+    margin-left: 20px;
 }
 
 header nav a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px; /* Уменьшаем размер ссылок */
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона при наведении */
+}
+
+header nav a:hover {
+    background-color: #007bff; /* Синий фон при наведении */
 }
 
 /* Секция "Герой" (Hero) */
@@ -62,39 +85,54 @@ header nav a {
     background: url('../images/hero-background.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
-    padding: 100px 0;
+    padding: 80px 0; /* Уменьшаем отступы */
+    border-bottom: 1px solid #ddd; /* Тонкая линия внизу секции */
+}
+
+.hero .container {
+    background-color: rgba(0, 0, 0, 0.5); /* Добавляем полупрозрачный фон для лучшей читаемости текста */
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .hero h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 32px; /* Уменьшаем размер заголовка */
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 18px; /* Уменьшаем размер параграфа */
 }
 
 /* Кнопка */
 .button {
     display: inline-block;
-    background-color: #e8491d;
+    background-color: #007bff; /* Меняем цвет кнопки */
     color: #fff;
-    padding: 12px 24px;
+    padding: 10px 20px; /* Уменьшаем отступы */
     text-decoration: none;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px; /* Уменьшаем размер шрифта */
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона при наведении */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Более темный синий при наведении */
 }
 
 /* Основной контент */
 .featured-content {
-    padding: 30px 0;
+    padding: 40px 0;
+    background-color: #fff; /* Белый фон для основного контента */
+    border-bottom: 1px solid #ddd; /* Тонкая линия внизу секции */
 }
 
 .featured-content .container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Переносим элементы на новую строку, если они не помещаются */
 }
 
 .featured-content .feature-item {
@@ -102,16 +140,32 @@ header nav a {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    width: 300px; /* Фиксированная ширина для элементов */
+    margin-bottom: 20px; /* Добавляем отступ снизу */
+    transition: transform 0.3s ease; /* Плавное увеличение при наведении */
+}
+
+.featured-content .feature-item:hover {
+    transform: scale(1.05); /* Увеличиваем размер при наведении */
 }
 
 .featured-content .feature-item img {
-    width: 80px;
+    width: 60px; /* Уменьшаем размер иконок */
     margin-bottom: 10px;
+}
+
+.featured-content .feature-item h3 {
+    font-size: 20px; /* Уменьшаем размер заголовка */
+    margin-bottom: 10px;
+}
+
+.featured-content .feature-item p {
+    font-size: 14px; /* Уменьшаем размер параграфа */
 }
 
 /* Подвал */
 footer {
-    background-color: #333;
+    background-color: #222; /* Темно-серый фон */
     color: #fff;
     text-align: center;
     padding: 20px 0;
